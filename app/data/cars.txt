@@ -1,0 +1,6 @@
+1, Honda, Civic, 2018, 123456
+2, Honda, Civic, 2017, 20000
+3, Lexus, RX350, 2019, 134000
+4, Honda, Civic, 2017, 20000
+5, Lexus, RC350, 2016, 34000
+6, Honda, Civic, 2017, 20000
