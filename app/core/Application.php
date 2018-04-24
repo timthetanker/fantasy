@@ -14,6 +14,7 @@ class Application
     {
         $this->prepareURL();
 
+
     }
 
     public function prepareURL(){
