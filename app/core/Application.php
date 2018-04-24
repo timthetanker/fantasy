@@ -8,11 +8,26 @@
  */
 class Application
 {
-    protected $controller, $action, $params;
+    protected $controller = 'homeController';
+    protected $action = 'index';
+    protected $params = [];
 
     public function __construct()
     {
         $this->prepareURL();
+        var_dump($this->controller);
+        if (file_exists(CONTROLLER . $this->controller . '.php')) {
+            //$this->controller will print HomeController assuming default dir is selected
+            //Thus if file_exists() start a new instance of the Controller Class
+            $this->controller = new $this->controller;
+            //method_exists(@param1 = class, @param2 = methodName)
+            if (method_exists($this->controller, $this->action)) {
+                //pass parameters to method we want to use via call_user_func_array()
+                call_user_func_array([$this->controller, $this->action], $this->params);
+            }
+        } else {
+            echo 'FILE DOES NOT EXIST';
+        }
 
 
     }
