@@ -36,7 +36,7 @@ class Application
             $url = explode('/', $requested);
 
 
-            $this->controller = isset($url[0]) ? $url[0] . 'Controller' : 'homeController';
+            $this->controller = isset($url[0]) ? $url[0] . 'controller' : 'homeController';
             $this->action = isset($url[1]) ? $url[1] : 'index';
             //we can remove $url[0] and $url[1] from array what is left is the url parameter
             unset($url[0], $url[1]);

@@ -4,6 +4,7 @@ class View
     protected $view_file; //represents where file is
     protected $view_data; //data you want to pass
 
+    // NB so values from the Controller() class
     public function __construct($view_file, $view_data)
     {
         $this->view_file = $view_file; //equal to view_file you are receiving

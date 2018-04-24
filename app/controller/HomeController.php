@@ -2,13 +2,6 @@
 
 class HomeController extends Controller
 {
-    //$id ='' = optional parameters
-    /**
-     *#PROTIP note the value for the view methods comes from Controller call_user_func_array()
-     * @params is an array values are passed to the homeController in the order they were received
-     * vid 06:00 for more, url below
-     * https://www.youtube.com/watch?v=lPWRgld-hj0
-     * */
 
     public function index($id = '', $name = '')
     {
