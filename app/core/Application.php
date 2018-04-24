@@ -15,7 +15,7 @@ class Application
     public function __construct()
     {
         $this->prepareURL();
-        var_dump($this->controller);
+        //var_dump($this->controller);
         if (file_exists(CONTROLLER . $this->controller . '.php')) {
             //$this->controller will print HomeController assuming default dir is selected
             //Thus if file_exists() start a new instance of the Controller Class
@@ -28,19 +28,16 @@ class Application
         } else {
             echo 'FILE DOES NOT EXIST';
         }
-
-
     }
 
     public function prepareURL(){
-        $requested = $_SERVER['REQUEST_URI']; //get URL
-        if(!empty($url)){
-           $url =  explode('/',$requested);
-           isset($url[0]) ? $this->controller = $url[0] : $this->controller = 'homeController';
-           isset($url[0]) ? $this->controller = $url[0] : $this->action = 'index';
+        $requested = trim($_SERVER['REQUEST_URI'], '/'); // want to get rid of backslash at end of url
+        if (!empty($requested)) {
+            $url = explode('/', $requested);
 
-             var_dump($url);
 
+            $this->controller = isset($url[0]) ? $url[0] . 'Controller' : 'homeController';
+            $this->action = isset($url[1]) ? $url[1] : 'index';
             //we can remove $url[0] and $url[1] from array what is left is the url parameter
             unset($url[0], $url[1]);
             //get the values of the array if not set create empty array
