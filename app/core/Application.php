@@ -45,4 +45,5 @@ class Application
             $this->params = !empty($url) ? array_values($url) : [];
         }
     }
+
 }

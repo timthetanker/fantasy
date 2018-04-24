@@ -35,7 +35,7 @@ class Controller
             $this->model = new $modelName;
             /**
              * thus above we have created the object
-             * the object is part of the Controller which I have extended in the CarController()
+             * the object is part of the Controller() which I have extended in the CarController()
              * So in CarController's() index() method we can simply refer to this model() method using $this->model = {pass the model name}
              */
         }

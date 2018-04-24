@@ -16,7 +16,7 @@ require VIEW . 'header.php';
 <div class="container">
     <div class="row">
         <div class="col-xs-12 login-form">
-            <form class="form-horizontal" action='' method="POST">
+            <form class="form-horizontal" action="" method="POST">
                 <fieldset>
                     <h5 class="login-text">Login To Get Started</h5>
                     <div class="control-group">
@@ -36,7 +36,7 @@ require VIEW . 'header.php';
                     <div class="control-group">
                         <!-- Button -->
                         <div class="controls">
-                            <button class="btn btn-success">Login</button>
+                            <button name="submitBtn" class="btn btn-success">Login</button>
                         </div>
                     </div>
                 </fieldset>
@@ -44,6 +44,10 @@ require VIEW . 'header.php';
         </div>
     </div>
 </div>
+
+<?php
+
+?>
 
 
 

@@ -6,6 +6,7 @@
  * Time: 19:56
  */
 require_once 'app/model/DB_Modules.php';
+/*
 class Users extends DB_Modules
 {
     protected $userID;
@@ -27,7 +28,7 @@ class Users extends DB_Modules
 
     /**
      * @return mixed
-     */
+     *//*
     public function getName()
     {
         return $this->name;
@@ -111,3 +112,4 @@ class Users extends DB_Modules
     }
 }
 
+*/
