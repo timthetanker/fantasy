@@ -33,7 +33,7 @@ $modules = [ROOT, APP, CORE, CONTROLLER, DB, MODEL, VIEW, SETTINGS ];
 set_include_path(get_include_path() . PATH_SEPARATOR . implode(PATH_SEPARATOR, $modules));
 spl_autoload_register('spl_autoload', false);
 #var_dump(get_include_path());
-#var_dump($_SERVER['REQUEST_URI']);
+var_dump($_SERVER['REQUEST_URI']);
 #var_dump(CONTROLLER);
 
 New Application;
