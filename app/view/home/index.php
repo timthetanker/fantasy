@@ -16,7 +16,7 @@ require VIEW . 'header.php';
 <div class="container">
     <div class="row">
         <div class="col-xs-12 login-form">
-            <form class="form-horizontal" action="" method="POST">
+            <form class="form-horizontal" action="../user/index.php" method="POST">
                 <fieldset>
                     <h5 class="login-text">Login To Get Started</h5>
                     <div class="control-group">
