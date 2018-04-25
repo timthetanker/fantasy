@@ -23,7 +23,7 @@ require VIEW . 'header.php';
                         <!-- Username -->
                         <label class="control-label" for="username">Username</label>
                         <div class="controls">
-                            <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+                            <input type="text" id="username" name="email" placeholder="" class="input-xlarge">
                         </div>
                     </div>
                     <div class="control-group">

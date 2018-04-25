@@ -2,7 +2,13 @@
 
 class HomeController extends Controller
 {
-
+    public function __construct()
+    {
+        #TODO fix routing
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            echo '<script>window.location = "../user/index"</script>';
+        }
+    }
     public function index($id = '', $name = '')
     {
         //echo 'I am in the ' .__CLASS__ . ' method = ' . __METHOD__;
